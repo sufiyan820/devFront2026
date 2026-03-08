@@ -179,7 +179,7 @@ const AdminProducts = () => {
                   <tr key={product.id} className="border-b hover:bg-gray-50">
                     <td className="py-3 px-4">
                       <img
-                        src={product.id ? `http://localhost:8080/api/product/add/${product.id}/image` : `https://via.placeholder.com/50?text=${encodeURIComponent(product.name)}`}
+                        src={product.id ? `http://16.171.170.96:8080/api/products/${product.id}/image` : `https://via.placeholder.com/50?text=${encodeURIComponent(product.name)}`}
                         alt={product.name}
                         className="w-12 h-12 object-cover rounded"
                         onError={(e) => {

@@ -56,8 +56,13 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">
-              Welcome to Family Mart
+              Welcome to Family Mart - Your Trusted Online Store 
             </h1>
+            <h2>
+
+              CREATED BY ABU SUFIYAN DEVOPS ENGINEER 🤖
+
+            </h2>
             <p className="text-xl mb-8 text-primary-100">
               Discover amazing products at unbeatable prices. Shop with confidence and enjoy fast, secure delivery. At Family Mart, we put your needs first.
             </p>

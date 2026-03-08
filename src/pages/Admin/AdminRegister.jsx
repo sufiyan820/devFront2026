@@ -10,7 +10,7 @@ export default function AdminRegister() {
 
   const register = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/admins/register", {
+      const res = await axios.post("http://16.171.170.96:8080/api/admins/register", {
         username,
         email,
         password
