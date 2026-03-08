@@ -9,7 +9,7 @@ export default function AdminLogin() {
 
   const login = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/uadmin/login", {
+      const res = await axios.post("http://16.171.170.96:8080/api/auth/uadmin/login", {
         username,
         password
       });

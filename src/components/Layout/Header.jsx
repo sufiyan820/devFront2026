@@ -127,7 +127,7 @@ const Header = () => {
                 className="text-gray-700 hover:text-primary-600 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Home
+                Home 
               </Link>
               <Link
                 to="/products"

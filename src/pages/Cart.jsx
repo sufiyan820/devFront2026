@@ -76,7 +76,7 @@ const Cart = () => {
               <div key={item.id || item.productId} className="card p-4">
                 <div className="flex flex-col sm:flex-row gap-4">
                   <img
-                    src={product.id ? `http://localhost:8080/api/store/products/${product.id}/image` : `https://via.placeholder.com/150?text=${encodeURIComponent(product.name)}`}
+                    src={product.id ? `http://16.171.170.96:8080/api/products/${product.id}/image` : `https://via.placeholder.com/150?text=${encodeURIComponent(product.name)}`}
                     alt={product.name}
                     className="w-full sm:w-32 h-32 object-cover rounded-lg"
                     onError={(e) => {

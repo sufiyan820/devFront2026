@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
 
   // Use backend image endpoint
   const imageUrl = product.id 
-    ? `http://localhost:8080/api/store/products/${product.id}/image`
+    ? `http://16.171.170.96:8080/api/products/${product.id}/image`
     : `https://via.placeholder.com/300x300?text=${encodeURIComponent(product.name)}`
 
   return (

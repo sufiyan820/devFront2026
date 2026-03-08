@@ -30,7 +30,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/auth/login/user",
+        "http://16.171.170.96:8080/api/auth/login/user",
         formData
       );
 
@@ -65,7 +65,7 @@ function Login() {
   // ================= GOOGLE LOGIN =================
   const handleGoogleLogin = () => {
     window.location.href =
-      "http://localhost:8080/oauth2/authorization/google";
+      "http://16.171.170.96:8080/oauth2/authorization/google";
   };
 
   return (
