@@ -10,7 +10,7 @@ export default function AdminProducts() {
   // ===== Fetch all products =====
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://16.171.170.96:8080/api/admin/products", {
+      const res = await axios.get("/api/admin/products", {
         headers: { Authorization: "Bearer " + token.trim() },
       });
       setProducts(res.data);
@@ -28,7 +28,7 @@ export default function AdminProducts() {
   const deleteProduct = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
     try {
-      await axios.delete(`http://16.171.170.96:8080/api/admin/products/${id}`, {
+      await axios.delete(`/api/admin/products/${id}`, {
         headers: { Authorization: "Bearer " + token.trim() },
       });
       alert("Product deleted");

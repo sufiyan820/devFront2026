@@ -42,7 +42,7 @@ const Register = () => {
       const { confirmPassword, ...userData } = formData;
 
       await axios.post(
-        "http://16.171.170.96:8080/api/users/register",
+        "/api/users/register",
         userData
       );
 

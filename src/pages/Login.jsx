@@ -30,7 +30,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://16.171.170.96:8080/api/auth/login/user",
+        "/api/auth/login/user",
         formData
       );
 

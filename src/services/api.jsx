@@ -1,11 +1,11 @@
 import axios from "axios";
 
-// EC2 Backend URL
-const API_BASE_URL = "http://16.171.170.96:8080";
+// Use nginx proxy instead of calling backend directly
+const API_BASE_URL = "/api";
 
 // Axios instance
 export const api = axios.create({
-  baseURL: `${API_BASE_URL}/api`,
+  baseURL: API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
   },

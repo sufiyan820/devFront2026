@@ -29,7 +29,7 @@ export default function AddProduct() {
     }
 
     try {
-      await axios.post("http://16.171.170.96:8080/api/admin/products", formData, {
+      await axios.post("/api/admin/products", formData, {
         headers: {
           Authorization: "Bearer " + token.trim(),
           "Content-Type": "multipart/form-data"
