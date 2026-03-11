@@ -16,7 +16,7 @@ You should see:
 ```
   VITE v5.x.x  ready in xxx ms
 
-  ➜  Local:   http://localhost:5173/
+  ➜  Local:   http://13.60.84.8/
   ➜  Network: use --host to expose
 ```
 
@@ -55,15 +55,15 @@ npm install
 **Check**:
 1. Open browser console (F12)
 2. Check for JavaScript errors
-3. Verify `http://localhost:5173` is accessible
+3. Verify `http://13.60.84.8` is accessible
 4. Check Network tab - is `main.jsx` loading?
 
 ### Issue 4: CORS Errors
 **Error**: `CORS policy` errors in console
 
 **Solution**: 
-- Backend must be running on `http://localhost:8080`
-- Backend CORS configured for `http://localhost:5173`
+- Backend must be running on `http://13.60.84.8`
+- Backend CORS configured for `http://13.60.84.8`
 
 ### Issue 5: Module Not Found
 **Error**: `Failed to resolve import`

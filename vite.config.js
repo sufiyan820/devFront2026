@@ -8,7 +8,7 @@ export default defineConfig({
     strictPort: false, // Allow fallback to next available port if 5173 is busy
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: '13.60.84.8',
         changeOrigin: true,
       }
     }

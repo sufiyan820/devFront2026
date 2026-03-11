@@ -37,7 +37,7 @@ export default defineConfig({
 import axios from 'axios'
 
 // ✅ Vite env variable support
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://api'
 
 // ✅ Axios instance created
 const api = axios.create({
