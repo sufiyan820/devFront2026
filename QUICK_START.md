@@ -4,14 +4,14 @@
 
 The dev server started successfully but on a different port:
 
-**Current URL**: `http://localhost:5175/`
+**Current URL**: `http://13.60.84.8/`
 
 Ports 5173 and 5174 were already in use, so Vite automatically used port 5175.
 
 ## To Access Your App
 
 1. **Open your browser**
-2. **Go to**: `http://localhost:5175/`
+2. **Go to**: `http://13.60.84.8/`
 3. You should see the ecommerce app!
 
 ## Fix Port Conflicts (Optional)

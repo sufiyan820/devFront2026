@@ -188,7 +188,13 @@ const AdminProducts = () => {
                       />
                     </td>
                     <td className="py-3 px-4 font-semibold">{product.name}</td>
-                    <td className="py-3 px-4">₹{product.price?.toFixed(2) || '0.00'}</td>
+                   <td className="py-3 px-4">
+  {new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0
+  }).format(product.price || 0)}
+</td>
                     <td className="py-3 px-4">
                       <div className="flex flex-col gap-1">
                         <span className={`px-2 py-1 rounded-full text-sm ${
