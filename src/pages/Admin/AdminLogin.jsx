@@ -3,23 +3,27 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState(""); 
+
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // <- use this to redirect
+
+  const navigate = useNavigate();
 
   const login = async () => {
     try {
+
       const res = await axios.post("/api/auth/admin/login", {
-        username,
-        password
+        email: email,
+        password: password
       });
 
-      // Save token & role
+      // save token
       localStorage.setItem("adminToken", res.data);
       localStorage.setItem("role", "ADMIN");
 
-      // ✅ Redirect to admin dashboard
+      // redirect
       navigate("/admin/dashboard");
+
     } catch (err) {
       alert("Invalid admin credentials");
     }
@@ -27,19 +31,21 @@ export default function AdminLogin() {
 
   return (
     <div className="flex items-center justify-center h-screen">
+
       <div className="p-8 bg-white shadow-md rounded w-80">
+
         <h2 className="text-xl mb-4 text-center">Admin Login</h2>
 
         <input
-          placeholder="Username"
-          onChange={e => setUsername(e.target.value)}
+          placeholder="Admin Email"
+          onChange={(e) => setEmail(e.target.value)}
           className="border p-2 w-full mb-3"
         />
 
         <input
           type="password"
           placeholder="Password"
-          onChange={e => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           className="border p-2 w-full mb-4"
         />
 
@@ -49,7 +55,9 @@ export default function AdminLogin() {
         >
           Login
         </button>
+
       </div>
+
     </div>
   );
 }
