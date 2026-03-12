@@ -77,7 +77,7 @@
 
 4. **Order Structure**: Backend Order model is simple (username, status, total). No items array in the entity.
 
-5. **CORS**: Backend is configured for `http://localhost:5173` (Vite default port).
+5. **CORS**: Backend is configured for `http://13.60.84.8:5173` (Vite default port).
 
 ## Backend Issues Found
 
@@ -93,7 +93,7 @@ public class AdminController {
 
 ## Frontend Configuration
 
-- **API Base URL**: `http://localhost:8080/api` (configurable via `.env`)
+- **API Base URL**: `http://13.60.84.8:8080/api` (configurable via `.env`)
 - **Frontend Port**: `5173` (matches backend CORS)
 - **JWT Storage**: Token stored in `localStorage` as `token`
 - **User Info**: Decoded from JWT and stored in `localStorage` as `user`

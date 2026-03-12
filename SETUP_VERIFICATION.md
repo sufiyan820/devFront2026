@@ -23,7 +23,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://13.60.84.8:8080',
         changeOrigin: true,
       }
     }
@@ -101,7 +101,7 @@ import axios from 'axios'  // Don't do this in components
 
 Create `.env` file:
 ```env
-VITE_API_URL=http://localhost:8080/api
+VITE_API_URL=http://13.60.84.8:8080/api
 ```
 
 Access in code:
@@ -120,8 +120,8 @@ import.meta.env.VITE_API_URL  // ✅ Vite env variable syntax
    ```bash
    npm run dev
    ```
-   - Runs on `http://localhost:5173` (Vite default)
-   - Proxy configured for `/api` → `http://localhost:8080`
+   - Runs on `http://13.60.84.8:5173` (Vite default)
+   - Proxy configured for `/api` → `http://13.60.84.8:8080`
 
 3. **Build for production:**
    ```bash

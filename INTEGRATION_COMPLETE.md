@@ -26,12 +26,12 @@
 
 #### Backend Configuration (`backend/src/main/resources/application.properties`)
 - **Port**: 8080 ✅
-- **CORS**: Configured for `http://localhost:5173` ✅
+- **CORS**: Configured for `http://13.60.84.8:5173` ✅
 - **Database**: PostgreSQL on `localhost:5432` ✅
 - **JWT**: Configured with secret key ✅
 
 #### Frontend Configuration (`src/services/api.js`)
-- **API Base URL**: `http://localhost:8080/api` (with `.env` fallback) ✅
+- **API Base URL**: `http://13.60.84.8:8080/api` (with `.env` fallback) ✅
 - **CORS**: Matches backend configuration ✅
 - **JWT**: Token stored in localStorage ✅
 
@@ -75,7 +75,7 @@ All endpoints are properly connected:
    cd backend
    mvn spring-boot:run
    ```
-   Backend will start on `http://localhost:8080`
+   Backend will start on `http://13.60.84.8:8080`
 
 ### Frontend Setup
 1. **Install Dependencies** (if not already done):
@@ -92,7 +92,7 @@ All endpoints are properly connected:
    ```bash
    npm run dev
    ```
-   Frontend will start on `http://localhost:5173`
+   Frontend will start on `http://13.60.84.8:5173`
 
 ## Testing Checklist
 
@@ -111,7 +111,7 @@ All endpoints are properly connected:
 ## Important Notes
 
 1. **Database**: Make sure PostgreSQL is running and `ecommerce_db` database exists
-2. **CORS**: Already configured for `http://localhost:5173` - no changes needed
+2. **CORS**: Already configured for `http://13.60.84.8:5173` - no changes needed
 3. **JWT**: Tokens are stored in localStorage and automatically added to requests
 4. **Order Status**: Fixed bug where status updates weren't working
 5. **Product Images**: Served as byte arrays from `/api/store/products/{id}/image`

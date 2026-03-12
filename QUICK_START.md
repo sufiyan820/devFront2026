@@ -62,7 +62,7 @@ If you see a blank page:
 
 ### CORS Errors
 - Backend must be running
-- Backend CORS should allow `http://localhost:5175` (or your port)
+- Backend CORS should allow `http://13.60.84.8:5175` (or your port)
 
 ### Module Errors
 - Restart dev server: `Ctrl+C` then `npm run dev`
@@ -70,7 +70,7 @@ If you see a blank page:
 
 ## Next Steps
 
-1. ✅ Server is running on `http://localhost:5175/`
+1. ✅ Server is running on `http://13.60.84.8:5175/`
 2. Open that URL in your browser
 3. Check browser console for any errors
 4. Make sure backend is running on port 8080
