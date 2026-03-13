@@ -89,7 +89,20 @@ export const cartAPI = {
 // ========================
 
 export const orderAPI = {
+  // place order wala hai G
   placeOrder: (data) => api.post("/orders/placeOrder", data),
+
+  // get order by id thik ba 
   getById: (id) => api.get(`/orders/${id}`),
+
+  // get all orders of a user ok na bhai
   getUserOrders: (userId) => api.get(`/orders/user/${userId}`),
+
+  // update order status done bhai
+  updateOrderStatus: (orderId, status) =>
+    api.put(`/orders/${orderId}/status`, { status }),
+
+  // cancel order done hai broo
+  cancelOrder: (orderId) =>
+    api.delete(`/orders/user/${orderId}`)
 };
