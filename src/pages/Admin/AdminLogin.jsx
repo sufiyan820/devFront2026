@@ -18,7 +18,7 @@ export default function AdminLogin() {
       });
 
       // save token
-      localStorage.setItem("adminToken", res.data);
+      localStorage.setItem("adminToken", res.data.token);
       localStorage.setItem("role", "ADMIN");
 
       // redirect
