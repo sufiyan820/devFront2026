@@ -102,7 +102,7 @@ export const orderAPI = {
   updateOrderStatus: (orderId, status) =>
     api.put(`/orders/${orderId}/status`, { status }),
 
-  // cancel order done hai broo
+  // cancel order done hai brooa
   cancelOrder: (orderId) =>
     api.delete(`/orders/user/${orderId}`)
 };
