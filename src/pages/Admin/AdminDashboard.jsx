@@ -35,6 +35,8 @@ export default function AdminDashboard() {
       <div className="p-4 border rounded shadow mb-4 hover:bg-gray-50">
         <h2 className="font-semibold mb-2">Inventory</h2>
         <div className="flex flex-col gap-2">
+          
+          
           <Link to="/admin/products/update-stock" className="text-blue-600 hover:underline">
             Update Product Stock
           </Link>
